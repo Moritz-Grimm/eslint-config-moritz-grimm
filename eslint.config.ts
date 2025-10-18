@@ -27,6 +27,7 @@ export default [
             '@typescript-eslint/explicit-function-return-type': 'warn',
             '@typescript-eslint/no-floating-promises': 'error',
             '@typescript-eslint/no-unsafe-member-access': 'warn',
+            '@typescript-eslint/no-unused-vars': 'warn',
         },
     },
     {
@@ -58,7 +59,7 @@ export default [
             'stylistic/semi': ['warn', 'always'],
             'stylistic/indent': ['warn', 4],
             'stylistic/brace-style': ['warn', '1tbs', { allowSingleLine: true }],
-            'curly': ['warn', 'all'],
+            'curly': ['warn', 'multi-line'],
             'stylistic/comma-dangle': ['warn', 'always-multiline'],
             'stylistic/object-curly-spacing': ['warn', 'always'],
             'stylistic/keyword-spacing': ['warn', { before: true, after: true }],
