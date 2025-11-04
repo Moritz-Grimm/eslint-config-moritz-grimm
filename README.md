@@ -78,4 +78,4 @@ If you prefer Prettier, you'll need to disable the stylistic rules.
 
 ## 📄 License
 
-ISC
+[MIT](license)
