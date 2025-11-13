@@ -1,22 +1,40 @@
 {
-    "name": "eslint-config-moritz-grimm",
+    "name": "@moritz-grimm/eslint-config-moritz-grimm",
     "version": "1.0.0",
     "description": "My preferred eslint config",
     "keywords": [
         "eslint",
-        "eslintconfig"
+        "eslintconfig",
+        "config"
     ],
+    "homepage": "https://github.com/Moritz-Grimm/eslint-config-moritz-grimm#readme",
+    "bugs": {
+        "url": "https://github.com/Moritz-Grimm/eslint-config-moritz-grimm/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Moritz-Grimm/eslint-config-moritz-grimm.git"
+    },
     "license": "MIT",
     "author": "moritz-grimm",
-    "main": "./eslint.config.ts",
+    "type": "module",
+    "exports": {
+        ".": "./eslint.config.js",
+        "./base": "./configs/eslint.base.config.js",
+        "./typescript": "./configs/eslint.typescript.config.js",
+        "./stylistic": "./configs/eslint.stylistic.config.js"
+    },
+    "main": "./eslint.config.js",
     "files": [
-        "eslint.config.ts",
+        "eslint.config.js",
+        "configs/*",
         "LICENSE",
         "README.md"
     ],
     "scripts": {
         "lint": "npx eslint",
         "lint:fix": "npx eslint --fix",
+        "publish:all": "npm publish --registry https://registry.npmjs.org && npm publish --registry https://npm.pkg.github.com/",
         "sort-package-json": "npx sort-package-json"
     },
     "dependencies": {
@@ -28,6 +46,9 @@
     },
     "peerDependencies": {
         "eslint": ">=9",
-        "typescript": ">=5.9.3"
+        "typescript": ">=5.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
