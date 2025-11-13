@@ -76,6 +76,6 @@ If you prefer Prettier, you'll need to disable the stylistic rules.
 
 ---
 
-## 📄 License
+## License
 
-[MIT](license)
+[MIT](#license)
