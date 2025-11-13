@@ -23,11 +23,11 @@ export default [
             },
         },
         rules: {
-            '@typescript-eslint/no-explicit-any': 'warn',
-            '@typescript-eslint/explicit-function-return-type': 'warn',
-            '@typescript-eslint/no-floating-promises': 'error',
-            '@typescript-eslint/no-unsafe-member-access': 'warn',
-            '@typescript-eslint/no-unused-vars': 'warn',
+            "@typescript-eslint/no-explicit-any": "warn",
+            "@typescript-eslint/explicit-function-return-type": "warn",
+            "@typescript-eslint/no-floating-promises": "error",
+            "@typescript-eslint/no-unsafe-member-access": "warn",
+            "@typescript-eslint/no-unused-vars": "warn",
         },
     },
     {
@@ -47,28 +47,31 @@ export default [
             /* -----------------------
                 Error-Linting
             ----------------------- */
-            'eqeqeq': ['warn', 'always'],
-            'no-undef': 'error',
-            'no-unreachable': 'error',
-            'no-duplicate-imports': 'warn',
-            'prefer-const': 'warn',
+            "eqeqeq": ["warn", "always"],
+            "no-undef": "error",
+            "no-unreachable": "error",
+            "no-duplicate-imports": "warn",
+            "prefer-const": "warn",
 
             /* -----------------------
                 Code-Styling
             ----------------------- */
-            'stylistic/semi': ['warn', 'always'],
-            'stylistic/indent': ['warn', 4],
-            'stylistic/brace-style': ['warn', '1tbs', { allowSingleLine: true }],
-            'curly': ['warn', 'multi-line'],
-            'stylistic/comma-dangle': ['warn', 'always-multiline'],
-            'stylistic/object-curly-spacing': ['warn', 'always'],
-            'stylistic/keyword-spacing': ['warn', { before: true, after: true }],
-            'stylistic/space-before-function-paren': ['warn', {
+            "stylistic/semi": ["warn", "always"],
+            "stylistic/indent": ["warn", 4],
+            "stylistic/brace-style": ["warn", "1tbs", { allowSingleLine: true }],
+            "curly": ["warn", "multi-line"],
+            "stylistic/comma-dangle": ["warn", "always-multiline"],
+            "stylistic/object-curly-spacing": ["warn", "always"],
+            "stylistic/keyword-spacing": ["warn", { before: true, after: true }],
+            "stylistic/space-before-function-paren": ["warn", {
                 "anonymous": "never",
                 "named": "never",
                 "asyncArrow": "never",
                 "catch": "always",
             }],
+            "stylistic/no-trailing-spaces": "warn",
+            "stylistic/eol-last": ["warn", "always"],
+            "stylistic/no-multi-spaces": "warn",
             "stylistic/quotes": ["warn", "double", { "allowTemplateLiterals": "always" }],
         },
     },
