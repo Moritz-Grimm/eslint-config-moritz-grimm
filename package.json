@@ -1,6 +1,6 @@
 {
     "name": "@moritz-grimm/eslint-config-moritz-grimm",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "My preferred eslint config",
     "keywords": [
         "eslint",
